@@ -1,0 +1,6 @@
+name: ItemDisabler
+version: '${project.version}'
+main: me.lucyn.itemdisabler.ItemDisabler
+api-version: '1.20'
+authors: [Lucyn]
+description: This plugin was created by request for Reddit user u/medplays

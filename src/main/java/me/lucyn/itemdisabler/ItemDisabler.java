@@ -1,6 +1,7 @@
 package me.lucyn.itemdisabler;
 
 import me.lucyn.itemdisabler.listeners.PearlListener;
+import me.lucyn.itemdisabler.listeners.TotemListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class ItemDisabler extends JavaPlugin {
@@ -11,6 +12,7 @@ public final class ItemDisabler extends JavaPlugin {
         saveDefaultConfig();
 
         getServer().getPluginManager().registerEvents(new PearlListener(this), this);
+        getServer().getPluginManager().registerEvents(new TotemListener(this), this);
 
         if(getConfig().getBoolean("pearl")) {
             getServer().broadcastMessage("Ender Pearls Disabled");
